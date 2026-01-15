@@ -178,10 +178,11 @@ h1, h2, h3, h4, h5, h6
 /* Footer layout: about + contact + newsletter row */
 .footer_row {
 	display: flex;
+	justify-content: center;
 	align-items: flex-start;
 	gap: 28px;
 	margin-top: 18px;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 }
 .footer_about {
 	max-width: 380px;
