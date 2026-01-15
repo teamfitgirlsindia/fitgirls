@@ -1283,10 +1283,292 @@ section
 {
 	display: block;
 	width: 100%;
-	background: #262626;
-	padding-top: 96px;
-	border-top: solid 1px #88591d;
-	padding-bottom: 20px;
+	background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+	padding-top: 80px;
+	padding-bottom: 40px;
+	border-top: solid 3px #FF9500;
+	position: relative;
+}
+
+.footer_top_section
+{
+	margin-bottom: 40px;
+}
+
+.footer_column
+{
+	margin-bottom: 40px;
+	padding: 0 20px;
+}
+
+/* Footer Logo Section */
+.footer_logo_section
+{
+	text-align: center;
+}
+
+.footer_logo a img
+{
+	width: 120px;
+	height: auto;
+	margin-bottom: 15px;
+	transition: transform 0.3s ease;
+}
+
+.footer_logo a:hover img
+{
+	transform: scale(1.05);
+}
+
+.footer_tagline
+{
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: 500;
+	margin-top: 15px;
+	line-height: 1.6;
+}
+
+/* Footer Sections */
+.footer_section
+{
+	text-align: left;
+}
+
+.footer_section_title
+{
+	font-size: 18px;
+	font-weight: 700;
+	color: #FF9500;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.footer_section_title::after
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 40px;
+	height: 2px;
+	background: #FF9500;
+	border-radius: 1px;
+}
+
+.footer_text
+{
+	font-size: 14px;
+	color: #CCCCCC;
+	line-height: 1.8;
+	margin: 0;
+}
+
+/* Contact Section */
+.footer_contact_info
+{
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.contact_item
+{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.contact_item strong
+{
+	font-size: 14px;
+	color: #FF9500;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.contact_links
+{
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.contact_links a
+{
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	padding-left: 15px;
+}
+
+.contact_links a:hover
+{
+	color: #FF9500;
+}
+
+/* Social Links */
+.footer_social_links
+{
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.footer_social_links strong
+{
+	font-size: 14px;
+	color: #FF9500;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.social_icons
+{
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+
+.social_icon
+{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background: rgba(255, 149, 0, 0.2);
+	border-radius: 50%;
+	color: #FF9500;
+	font-size: 16px;
+	transition: all 0.3s ease;
+	border: 1px solid #FF9500;
+}
+
+.social_icon:hover
+{
+	background: #FF9500;
+	color: #ffffff;
+	transform: translateY(-3px);
+	box-shadow: 0 5px 15px rgba(255, 149, 0, 0.3);
+}
+
+/* Footer Bottom */
+.footer_bottom_section
+{
+	padding-top: 30px;
+}
+
+.footer_divider
+{
+	height: 1px;
+	background: linear-gradient(90deg, transparent, #FF9500, transparent);
+	margin-bottom: 25px;
+}
+
+.footer_copyright
+{
+	font-size: 13px;
+	color: #999999;
+	text-align: center;
+	margin: 0;
+	line-height: 1.6;
+	font-weight: 400;
+}
+
+/* Responsive Footer */
+@media (max-width: 991px)
+{
+	.footer
+	{
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+
+	.footer_column
+	{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.footer_section
+	{
+		text-align: center;
+	}
+
+	.footer_logo_section
+	{
+		text-align: center;
+	}
+
+	.contact_links
+	{
+		justify-content: center;
+	}
+
+	.social_icons
+	{
+		justify-content: center;
+	}
+
+	.footer_section_title::after
+	{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media (max-width: 575px)
+{
+	.footer
+	{
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+
+	.footer_column
+	{
+		padding: 0 10px;
+		margin-bottom: 25px;
+	}
+
+	.footer_logo a img
+	{
+		width: 100px;
+	}
+
+	.footer_section_title
+	{
+		font-size: 16px;
+	}
+
+	.footer_text
+	{
+		font-size: 13px;
+	}
+
+	.contact_links a
+	{
+		font-size: 13px;
+	}
+
+	.footer_copyright
+	{
+		font-size: 12px;
+	}
+
+	.social_icon
+	{
+		width: 36px;
+		height: 36px;
+		font-size: 14px;
+	}
 }
 .footer_content
 {
@@ -1425,4 +1707,251 @@ section
 .footer_image img
 {
 	max-width: 100%;
+}
+
+/***********
+13. Program Fees
+***********/
+
+.program_fees_section
+{
+	padding: 100px 0;
+	background: linear-gradient(135deg, #FFF5E6 0%, #FFE4CC 100%);
+	position: relative;
+}
+
+.program_fees_title
+{
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.program_fees_title h2
+{
+	font-size: 48px;
+	font-weight: 700;
+	color: #333333;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.program_fees_title h2::after
+{
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 80px;
+	height: 4px;
+	background: linear-gradient(90deg, #e83e8c, #ff6b6b);
+	border-radius: 2px;
+}
+
+.fees_card
+{
+	background: #ffffff;
+	border-radius: 12px;
+	padding: 0;
+	transition: all 0.3s ease;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+}
+
+.fees_card:hover
+{
+	transform: translateY(-10px);
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.fees_card.trial
+{
+	border: 2px solid #e83e8c;
+	position: relative;
+}
+
+.fees_card_header
+{
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	padding: 40px 30px;
+	text-align: center;
+	color: #ffffff;
+	position: relative;
+}
+
+.fees_card_header.trial
+{
+	background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.trial_badge
+{
+	position: absolute;
+	top: 15px;
+	right: -35px;
+	background: #ff6b6b;
+	color: #ffffff;
+	padding: 5px 40px;
+	transform: rotate(45deg);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fees_amount
+{
+	font-size: 56px;
+	font-weight: 700;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.fees_card_body
+{
+	padding: 40px 30px;
+}
+
+.fees_duration
+{
+	font-size: 20px;
+	font-weight: 600;
+	color: #333333;
+	margin-bottom: 8px;
+}
+
+.fees_package_type
+{
+	font-size: 14px;
+	color: #999999;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 25px;
+	font-weight: 500;
+}
+
+.fees_features
+{
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+.fees_features li
+{
+	font-size: 14px;
+	color: #666666;
+	padding: 10px 0;
+	border-bottom: 1px solid #f0f0f0;
+	font-weight: 500;
+}
+
+.fees_features li:last-child
+{
+	border-bottom: none;
+}
+
+.fees_btn
+{
+	width: 100%;
+	padding: 15px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: #ffffff;
+	border: none;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin-top: 20px;
+}
+
+.fees_btn:hover
+{
+	transform: scale(1.05);
+	box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.fees_btn.trial
+{
+	background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.fees_btn.trial:hover
+{
+	box-shadow: 0 8px 20px rgba(245, 87, 108, 0.4);
+}
+
+@media (max-width: 991px)
+{
+	.program_fees_section
+	{
+		padding: 60px 0;
+	}
+
+	.program_fees_title h2
+	{
+		font-size: 36px;
+	}
+
+	.fees_amount
+	{
+		font-size: 44px;
+	}
+
+	.fees_card
+	{
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 575px)
+{
+	.program_fees_section
+	{
+		padding: 40px 0;
+	}
+
+	.program_fees_title h2
+	{
+		font-size: 28px;
+		letter-spacing: 1px;
+	}
+
+	.fees_amount
+	{
+		font-size: 36px;
+	}
+
+	.fees_duration
+	{
+		font-size: 18px;
+	}
+
+	.fees_card_header
+	{
+		padding: 30px 20px;
+	}
+
+	.fees_card_body
+	{
+		padding: 30px 20px;
+	}
+
+	.fees_features li
+	{
+		font-size: 13px;
+		padding: 8px 0;
+	}
 }
