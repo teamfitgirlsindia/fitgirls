@@ -1877,6 +1877,12 @@ section
 	margin-top: 20px;
 }
 
+.fees_btn a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
 .fees_btn:hover
 {
 	transform: scale(1.05);
